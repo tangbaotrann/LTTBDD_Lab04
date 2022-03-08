@@ -6,6 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -59,6 +60,7 @@ public class LanguageAdapter extends BaseAdapter {
         // TextView --> UI
         TextView tvLanguageName = (TextView) view.findViewById(R.id.tvLanguageName);
         ImageView imgView = view.findViewById(R.id.logo);
+        Button btnChat = view.findViewById(R.id.btnChat);
         final LinearLayout linearLayout = view.findViewById(R.id.idLinearLayout);
         final Language language = listLanguage.get(i);
 
@@ -97,6 +99,13 @@ public class LanguageAdapter extends BaseAdapter {
                 Toast.makeText(context, language.getName(), Toast.LENGTH_SHORT).show();
                 positionSelected = i;
                 notifyDataSetChanged();
+            }
+        });
+        // Button click
+        btnChat.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(context, "Thanks Clicked.", Toast.LENGTH_SHORT).show();
             }
         });
 
