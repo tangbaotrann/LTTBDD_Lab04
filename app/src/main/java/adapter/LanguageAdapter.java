@@ -59,6 +59,7 @@ public class LanguageAdapter extends BaseAdapter {
 
         // TextView --> UI
         TextView tvLanguageName = (TextView) view.findViewById(R.id.tvLanguageName);
+        TextView tvShop = view.findViewById(R.id.tvShop);
         ImageView imgView = view.findViewById(R.id.logo);
         Button btnChat = view.findViewById(R.id.btnChat);
         final LinearLayout linearLayout = view.findViewById(R.id.idLinearLayout);
@@ -67,6 +68,7 @@ public class LanguageAdapter extends BaseAdapter {
         if(listLanguage != null && !listLanguage.isEmpty()) {
             // TextView
             tvLanguageName.setText(language.getName());
+            tvShop.setText(language.getShop());
             int idLanguage = language.getId();
             switch (idLanguage) {
                 case 1:

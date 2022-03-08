@@ -4,10 +4,12 @@ public class Language {
 
     private int id;
     private String name;
+    private String shop;
 
-    public Language(int id, String name) {
+    public Language(int id, String name, String shop) {
         this.id = id;
         this.name = name;
+        this.shop = shop;
     }
 
     public int getId() {
@@ -22,8 +24,16 @@ public class Language {
         return name;
     }
 
+    public String getShop() {
+        return shop;
+    }
+
     public void setName(String name) {
         this.name = name;
+    }
+
+    public void setShop(String shop) {
+        this.shop = shop;
     }
 
 }

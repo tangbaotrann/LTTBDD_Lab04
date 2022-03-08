@@ -23,12 +23,12 @@ public class MainActivity extends AppCompatActivity {
 
         listView = (ListView) findViewById(R.id.idListView);
         listLanguage = new ArrayList<>();
-        listLanguage.add(new Language(1, "Cá nấu lẫu, nấu mini... \n ShopDevang"));
-        listLanguage.add(new Language(2, "Đồ chơi dạng mô hình \n Shop Thế giới đồ chơi"));
-        listLanguage.add(new Language(3, "1KG Khô Gà Bơ Tổi... \n Shop LTD Food"));
-        listLanguage.add(new Language(4, "Lãnh đạo giản đơn \n Shop Minh Long Book"));
-        listLanguage.add(new Language(5, "Xe cần cẩu đa năng \n Shop Thế giới đồ chơi"));
-        listLanguage.add(new Language(6, "Hiếu lòng con trẻ \n Shop Minh Long Book"));
+        listLanguage.add(new Language(1, "Cá nấu lẫu, nấu mini...", "Shop Devang"));
+        listLanguage.add(new Language(2, "Đồ chơi dạng mô hình", "Shop Thế giới đồ chơi"));
+        listLanguage.add(new Language(3, "1KG Khô Gà Bơ Tổi...", "Shop LTD Food"));
+        listLanguage.add(new Language(4, "Lãnh đạo giản đơn", "Shop Minh Long Book"));
+        listLanguage.add(new Language(5, "Xe cần cẩu đa năng", "Shop Thế giới đồ chơi"));
+        listLanguage.add(new Language(6, "Hiếu lòng con trẻ", "Shop Minh Long Book"));
 
         LanguageAdapter adapter = new LanguageAdapter(this, R.layout.item_custom_list_view, listLanguage);
         listView.setAdapter(adapter);

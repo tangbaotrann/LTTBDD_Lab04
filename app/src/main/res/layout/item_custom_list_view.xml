@@ -28,17 +28,28 @@
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_weight="1.0"
+        android:layout_marginTop="6dp"
         android:orientation="vertical"
+
         android:weightSum="1">
 
         <TextView
             android:id="@+id/tvLanguageName"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:gravity="left|center"
             android:text="ITEM EXAMPLE"
-            android:textSize="20dp"
+            android:textSize="18dp"
             android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvShop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="Shop"
+            android:textColor="#BDB1B1"
+            android:textSize="16sp" />
 
     </LinearLayout>
 
